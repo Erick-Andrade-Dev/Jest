@@ -1,4 +1,4 @@
-const mul = require('./mul')
+const mul = require('../src/mul')
 
 describe('mul()', () => {
     
@@ -8,6 +8,10 @@ describe('mul()', () => {
 
     it('Verifica se o valor inserido não é númerico', () => {
         expect(mul('2',2)).toEqual('Insira um valor númerico!')
+    });
+
+    it('Verifica se o número é maior que 0', () => {
+        expect(mul(0,0)).toEqual('Insira um número maior que 0')
     })
    
 })
