@@ -1,7 +1,13 @@
 function mul(a, b) {
-    return a * b 
+    try{
+        if(typeof a !== 'number' || typeof b !== 'number'){
+            throw new Error('Insira um valor númerico!')
+        } 
+        return a * b
+    }catch(error){
+        return error.message
+    }     
 }
 
-console.log(mul(2, 8))
 
 module.exports = mul
