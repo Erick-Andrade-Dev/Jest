@@ -1,1 +1,1 @@
-# Project-Jest
+Creating functions and testing through Jest
